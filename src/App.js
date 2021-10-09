@@ -6,7 +6,7 @@ import Details from './components/Details'
 
 function App() {
   const [characterList, setCharacter] = useState([]);
-  const [currentCharacter, setCC] =useState('true');
+  const [currentCharacter, setCC] =useState('false');
 
   const expand = id => {
     setCC(id);
@@ -39,7 +39,7 @@ function App() {
         })
       }
       {
-        currentCharacter && <Details props = {characterList} id={currentCharacter} />
+        //currentCharacter && <Details props = {characterList} id={currentCharacter} />
       }
     </div>
   );

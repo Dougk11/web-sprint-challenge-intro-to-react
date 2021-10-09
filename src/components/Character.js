@@ -19,6 +19,9 @@ padding: 7px;
 `
 
 export default function Character({props, action}) {
+    console.log(props);
+    const asArray = Object.entries(props);
+    console.log(asArray);
     return (
         <StyledCharacter>
         {props.name}
